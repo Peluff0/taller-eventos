@@ -4,7 +4,6 @@ const button = document.querySelector('button');
 div.addEventListener('click', () => {
     alert("Hola! Soy el div");
 });
-button.addEventListener('click', (event) => {
-    event.stopPropagation();
+button.addEventListener('click', () => {
     alert("Hola!");
 });
