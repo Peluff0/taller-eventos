@@ -1,6 +1,10 @@
-var divClick = document.querySelector('div')
-divClick.addEventListener('click', clicked)
+const div = document.querySelector('div');
+const button = document.querySelector('button');
 
-function clicked() {
-    alert('Hola! Soy el div');
-}
+div.addEventListener('click', () => {
+    alert("Hola! Soy el div");
+});
+button.addEventListener('click', (event) => {
+    event.stopPropagation();
+    alert("Hola!");
+});
